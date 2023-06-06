@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vehicle.RegisterVehicleActivity"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Registrar Vehiculo"
+                android:id="@+id/title"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/marca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Marca:"
+                android:textSize="25sp"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/marca"
+                tools:text="123456789"
+                android:textSize="20sp"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/modelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/etMarca"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Modelo:"
+                android:textSize="25sp"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/modelo"
+                tools:text="123456789"
+                android:textSize="20sp"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/coleccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/etModelo"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Nombre de coleccion:"
+                android:textSize="25sp"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etColeccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/coleccion"
+                tools:text="Jose Gomez"
+                android:textSize="20sp"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/combustion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/etColeccion"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Tipo de combustion:"
+                android:textSize="25sp"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etCombustion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/combustion"
+                tools:text="Jose Gomez"
+                android:textSize="20sp"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/etCombustion"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Direccion:"
+                android:textSize="25sp"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar direccion"
+                app:layout_constraintTop_toBottomOf="@id/etCombustion"
+                app:layout_constraintStart_toEndOf="@+id/direccion"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/direccion"
+                tools:text="Calle *** # *** - **"
+                android:textSize="20sp"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar Vehiculo"
+                app:layout_constraintTop_toBottomOf="@id/tvDireccion"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

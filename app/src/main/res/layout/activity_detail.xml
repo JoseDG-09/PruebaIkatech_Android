@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vehicle.DetailActivity"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ivImagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/ivImagen"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                tools:text = "Prueba"/>
+
+            <TextView
+                android:id="@+id/tvModelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/ivImagen"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                tools:text = "2010"/>
+
+            <TextView
+                android:id="@+id/estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvMarca"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="Estado:"/>
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvMarca"
+                app:layout_constraintStart_toEndOf="@id/estado"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"
+                style="@style/TextAppearance.AppCompat.Body1"
+                tools:text = "Prueba2"/>
+
+            <TextView
+                android:id="@+id/combustible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/estado"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="Combustible:"/>
+
+            <TextView
+                android:id="@+id/tvCombustible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/estado"
+                app:layout_constraintStart_toEndOf="@id/combustible"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"
+                style="@style/TextAppearance.AppCompat.Body1"
+                tools:text = "Prueba2"/>
+
+            <TextView
+                android:id="@+id/coleccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/combustible"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="Coleccion:"/>
+
+            <TextView
+                android:id="@+id/tvColeccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/combustible"
+                app:layout_constraintStart_toEndOf="@id/coleccion"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"
+                style="@style/TextAppearance.AppCompat.Body1"
+                tools:text = "Prueba2"/>
+
+            <TextView
+                android:id="@+id/direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/coleccion"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="15dp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="Direccion:"/>
+
+            <TextView
+                android:id="@+id/tvDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/coleccion"
+                app:layout_constraintStart_toEndOf="@id/direccion"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"
+                style="@style/TextAppearance.AppCompat.Body1"
+                tools:text = "Prueba2"/>
+
+            <Button
+                android:id="@+id/btnMaps"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/direccion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btnFavorite"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/btnMaps"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnCompra"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/btnFavorite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/btnCompra"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
